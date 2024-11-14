@@ -30,22 +30,20 @@ public class TablaSenoCosenoServlet extends HttpServlet {
         out.println("<thead class='table-dark'><tr><th>Ángulo (°)</th><th>Seno</th><th>Coseno</th></tr></thead>");
         out.println("<tbody>");
 
-        for (int a = 0; a <= 360; a += 15) {
-            double radian = Math.toRadians(a);
+        for (int angle = 0; angle <= 360; angle += 15) {
+            double radian = Math.toRadians(angle);
             double sinValue = Math.sin(radian);
             double cosValue = Math.cos(radian);
 
-            out.printf("<tr><td>%d</td><td>%.4f</td><td>%.4f</td></tr>", a, sinValue, cosValue);
+            out.printf("<tr><td>%d</td><td>%.4f</td><td>%.4f</td></tr>", angle, sinValue, cosValue);
         }
 
         out.println("</tbody>");
         out.println("</table>");
-        out.println("<div class='text-center mt-4'>");
-        out.println("<a href='/' class='btn btn-secondary'>Volver</a>");
-        out.println("</div>");
         out.println("</div>");
         out.println("</body>");
         out.println("</html>");
     }
 }
+
 
