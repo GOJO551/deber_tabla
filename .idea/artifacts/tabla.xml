@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="tabla">
+    <output-path>$PROJECT_DIR$/out/artifacts/tabla</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="tabla" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="tabla/web/Web" />
+    </root>
+  </artifact>
+</component>
